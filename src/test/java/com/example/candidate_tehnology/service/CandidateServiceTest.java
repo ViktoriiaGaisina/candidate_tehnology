@@ -6,7 +6,6 @@ import com.example.candidate_tehnology.dto.TehnologyDTO;
 import com.example.candidate_tehnology.mapper.CandidateMapper;
 import com.example.candidate_tehnology.model.Candidate;
 import com.example.candidate_tehnology.repository.CandidateRepository;
-import jakarta.persistence.EntityNotFoundException;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -14,9 +13,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 @ActiveProfiles("test")
 @SpringBootTest(classes = CandidateTehnologyApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class CandidateServiceTest {

@@ -1,8 +1,10 @@
 package com.example.candidate_tehnology.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.Objects;
 
 @Builder

@@ -6,7 +6,7 @@ import com.example.candidate_tehnology.mapper.TehnologyMapper;
 import com.example.candidate_tehnology.model.Candidate;
 import com.example.candidate_tehnology.model.Tehnology;
 import com.example.candidate_tehnology.repository.TehnologyRepository;
-import jakarta.persistence.EntityNotFoundException;
+import javax.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

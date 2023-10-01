@@ -1,6 +1,6 @@
 package com.example.candidate_tehnology.config;
 
-import jakarta.servlet.ServletContext;
+import javax.servlet.ServletContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
