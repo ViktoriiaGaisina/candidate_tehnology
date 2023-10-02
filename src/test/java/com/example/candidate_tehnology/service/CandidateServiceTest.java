@@ -15,6 +15,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.List;
+
 @ActiveProfiles("test")
 @SpringBootTest(classes = CandidateTehnologyApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class CandidateServiceTest {
@@ -37,7 +38,7 @@ class CandidateServiceTest {
         CandidateDTO candidateDTO = createDTO();
         Candidate candidate = candidateService.save(candidateDTO);
         Assertions.assertNotNull(candidate);
-        Assertions.assertDoesNotThrow(()->candidateService.getById(candidate.getId()));
+        Assertions.assertDoesNotThrow(() -> candidateService.getById(candidate.getId()));
 
     }
 
@@ -72,7 +73,7 @@ class CandidateServiceTest {
         Candidate candidate = candidateService.save(candidateDTO);
         candidateService.deleteById(candidate.getId());
         Assertions.assertThrows(EntityNotFoundException.class,
-                () ->candidateService.getById(candidate.getId()));
+                () -> candidateService.getById(candidate.getId()));
     }
 
     private CandidateDTO createDTO() {
